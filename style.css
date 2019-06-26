@@ -1,0 +1,32 @@
+body {
+  background: #fefefe;
+}
+
+.mainHeader {
+  color: tomato;
+}
+
+.sectionHeader {
+  color: #1460aa;
+}
+
+.diaryHeader {
+  color: #c5572b;
+}
+
+.diarySectionHeader {
+  color: cornflowerblue;
+}
+
+.articleHeader {
+  font-size: 48px;
+  color: darkcyan;
+}
+
+.articleParagraph {
+  color: purple;
+}
+
+.pamietniczek {
+  background: turquoise;
+}
