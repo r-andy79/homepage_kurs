@@ -13,6 +13,5 @@ console.log(paragraphs)
 console.log(paragraphs[0])
 
 const day = document.querySelector('.day__paragraph--js')
-console.log(day.innerHTML)
-day.innerHTML = "<strong>koniec tygodnia!<strong>";
+day.innerHTML = "koniec tygodnia!";
 console.log(day.innerHTML)

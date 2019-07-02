@@ -58,6 +58,15 @@ body {
   color: #1a936f;
 }
 
+.navigation__item {
+  display: inline;
+}
+
+.navigation__list {
+  list-style: none;
+  padding: 0;
+}
+
 
 .day__header {
   color: red;
@@ -112,7 +121,7 @@ body {
   text-decoration: none;
 }
 
-.navigation {
+.site-header {
   position: fixed;
   width: 100%;
   top: 10px;
@@ -120,4 +129,28 @@ body {
   box-sizing: border-box;
   padding: 10px;
   background: #fff;
+}
+
+.day {
+  padding: 16px;
+}
+
+.day__header {
+  margin: 0 0 16px;
+  color: #0496ff;
+}
+
+.day__header--sunday {
+  color: #1a936f;
+}
+
+.day__paragraph {
+  line-height: 36px;
+  padding: 16px;
+  margin: 0;
+}
+
+.hobby__list {
+  list-style: none;
+  padding: 0;
 }

@@ -10,8 +10,14 @@
 </head>
 
 <body>
-  <header class="navigation">
-    <a class="navigation__link" href="index.html">Strona główna</a>
+  <header class="site-header">
+    <nav class="navigation">
+      <ul class="navigation__list">
+        <li class="navigation__item"><a class="navigation__link" href="index.html">Strona główna</a></li>
+        <li class="navigation__item"><a class="navigation__link" href="tydzien/poniedzialek.html">Poniedziałek</a></li>
+      </ul>
+    </nav>
+    
   </header>
   <main class="main" id="top">
     <header class="header">
@@ -21,31 +27,43 @@
       <h2 class="about__header">Kim jestem?</h2>
       <p class="about__paragraph">
         <img src="tydzien/autor-photo.jpeg" alt="zdjęcie autora" class="about__picture">
-        Na co dzień pracuję w <b>korporacji</b>, co zaczyna mnie już <strong>męczyć</strong>. Co
-        lubię robić?
-        Fotografować, latać dronem, słuchać
-        muzyki (najlepiej <i>na żywo</i> :))<br>
+        Na co dzień pracuję w <b>korporacji</b>, co zaczyna mnie już <strong>męczyć</strong>.<br>
       <a class="about__link" href="#pamietniczek">Przejdź do pamiętniczka</a>
     </p>
     <p class="about__paragraph about__paragraph--color about__paragraph--js">
       Testuję modyfikator
     </p>
+    <section class="hobby">
+      <h3>Moje hobby:</h3>
+      <ul class="hobby__list">
+        <li>fotografowanie</li>
+        <li>latanie dronem</li>
+        <li>słuchanie muzyki</li>
+        <li>układanie planu dnia
+          <ol>
+              <li>Otwórz przeglądarkę</li>
+              <li>Wpisz cotenfrontend.pl</li>
+              <li>[enter]</li>
+          </ol>
+        </li>
+      </ul>
+    </section>
     </section>
 
     <section class="diary" id="pamietniczek">
       <h2 class="diary__header">Pamiętniczek</h2>
       <p class="diary__paragraph">Tutaj będą pojawiać się wpisy</p>
-      <section>
+      <section class="day">
         <h3 class="day__header">Poniedziałek</h3>
         <p class="day__paragraph">Co by tu napisać... Hmmm... Jeszcze pomyślę ;)</p>
         <a class="day__link" href="tydzien/poniedzialek.html">Przejdź do wpisu</a>
       </section>
-      <section>
+      <section class="day">
         <h3 class="day__header">Wtorek</h3>
         <p class="day__paragraph">Dziesiąty dzień diety, jest ok <em>2kg w dół</em>, całkiem nieźle</p>
         <a class="day__link" href="tydzien/wtorek.html">Przejdź do wpisu</a>
       </section>
-      <section>
+      <section class="day">
         <h3 class="day__header">Środa</h3>
         <p class="day__paragraph">Jedenasty dzień diety. Waga delikatnie przekracza 80kg. Całkiem dobry wynik, jak na tyle
           dni, ale nie
@@ -53,12 +71,12 @@
           co jest celem.</p>
         <a class="day__link" href="tydzien/sroda.html">Przejdź do wpisu</a>
       </section>
-      <section>
+      <section class="day">
         <h3 class="day__header">Czwartek</h3>
         <p class="day__paragraph">Another day... Waga w miejscu... to samo co wczoraj.</p>
         <a class="day__link" href="tydzien/czwartek.html">Przejdź do wpisu</a>
       </section>
-      <section>
+      <section class="day">
         <h3 class="day__header">Piątek</h3>
         <p class="day__paragraph">Co może przynieść nowy dzień? Jak to śpiewała <span class="day__paragraph--green">Kasia Kowalska</span>, jakieś 20 lat temu...To w
           sumie trochę
@@ -66,18 +84,54 @@
           że coś, co całkiem nieźle pamiętam było tak dawno temu...</p>
         <a class="day__link" href="tydzien/piatek.html">Przejdź do wpisu</a>
       </section>
-      <section>
+      <section class="day">
         <h3 class="day__header">Sobota</h3>
         <p class="day__paragraph">Dzisiaj impreza urodzinowa! :)</p>
         <a class="day__link" href="tydzien/sobota.html">Przejdź do wpisu</a>
       </section>
-      <section>
-        <h3 class="day__header">Niedziela</h3>
+      <section class="day">
+        <h3 class="day__header day__header--sunday">Niedziela</h3>
         <p class="day__paragraph">Dzisiaj lekki kac, ale dramatu nie było :). Długi spacer pomógł.</p>
         <a class="day__link" href="tydzien/niedziela.html">Przejdź do wpisu</a>
         <p class="day__paragraph day__paragraph--js"></p>
       </section>
     </section>
+    <section class="glossary">
+      <h3>Słowniczek</h3>
+      <dl>
+        <dt>CSS</dt>
+        <dd>style (to co widzisz jak jest ładne albo brzydkie</dd>
+        <dt>HTML</dt>
+        <dd>treść + szkielet strony</dd>
+        <dt>JavaScript</dt>
+        <dt>ES6</dt>
+        <dd>rzeczy, których teraz się uczę</dd>
+      </dl>
+    </section>
+    <section class="data">
+    <table class="table">
+      <caption>Rozpiska WTF</caption>
+      <thead>
+        <tr>
+          <th>Tydzień</th>
+          <th>Lekcja</th>
+          <th>Czas trwania</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>I</td>
+          <td>WTF: Intro</td>
+          <td>5:00</td>
+        </tr>
+        <tr>
+          <td>I</td>
+          <td>Ścieżka kariery</td>
+          <td>7:12</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
   </main>
   <footer>
     <a href="#top" class="top">Na górę</a>
